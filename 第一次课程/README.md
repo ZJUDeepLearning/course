@@ -1,11 +1,11 @@
 # 深度学习基础第一次课程
 ## 深度学习案例
 
-1、YOLO3物体检测
+[1、YOLO3物体检测](https://www.bilibili.com/video/av22201624/)
 
-2、神经风格转移
+[2、神经风格转移](https://www.bilibili.com/video/av22201656/)
 
-3、DeepFake换脸
+[3、DeepFake换脸](https://www.bilibili.com/video/av22201455/)
 
 [4、DeepJazz](https://soundcloud.com/deepjazz-ai)
 
