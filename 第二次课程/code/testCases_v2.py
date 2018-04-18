@@ -10,26 +10,26 @@ def initialize_parameters_test_case():
     n_x, n_h, n_y = 2, 4, 1
     return n_x, n_h, n_y
 
+
 def forward_propagation_test_case():
     np.random.seed(1)
     X_assess = np.random.randn(2, 3)
+    b1 = np.random.randn(4,1)
+    b2 = np.array([[ -1.3]])
 
     parameters = {'W1': np.array([[-0.00416758, -0.00056267],
         [-0.02136196,  0.01640271],
         [-0.01793436, -0.00841747],
         [ 0.00502881, -0.01245288]]),
      'W2': np.array([[-0.01057952, -0.00909008,  0.00551454,  0.02292208]]),
-     'b1': np.array([[ 0.],
-        [ 0.],
-        [ 0.],
-        [ 0.]]),
-     'b2': np.array([[ 0.]])}
+     'b1': b1,
+     'b2': b2}
 
     return X_assess, parameters
 
 def compute_cost_test_case():
     np.random.seed(1)
-    Y_assess = np.random.randn(1, 3)
+    Y_assess = (np.random.randn(1, 3) > 0)
     parameters = {'W1': np.array([[-0.00416758, -0.00056267],
         [-0.02136196,  0.01640271],
         [-0.01793436, -0.00841747],
@@ -48,7 +48,7 @@ def compute_cost_test_case():
 def backward_propagation_test_case():
     np.random.seed(1)
     X_assess = np.random.randn(2, 3)
-    Y_assess = np.random.randn(1, 3)
+    Y_assess = (np.random.randn(1, 3) > 0)
     parameters = {'W1': np.array([[-0.00416758, -0.00056267],
         [-0.02136196,  0.01640271],
         [-0.01793436, -0.00841747],
@@ -100,7 +100,7 @@ def update_parameters_test_case():
 def nn_model_test_case():
     np.random.seed(1)
     X_assess = np.random.randn(2, 3)
-    Y_assess = np.random.randn(1, 3)
+    Y_assess = (np.random.randn(1, 3) > 0)
     return X_assess, Y_assess
 
 def predict_test_case():
