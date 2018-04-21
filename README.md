@@ -1,2 +1,2 @@
 # course
-这个course仓库将每周的内容都会提前打包传到github上面，分为notes、code和readme，其中readme都是一些视频等教学案例，大家可以按着readme中的链接去点进去看。
+这个course仓库将每周的内容都会提前打包传到github上面，分为notes、code和readme，其中readme都是一些视频等教学案例，大家可以按着readme中的链接去点进去看。哈哈哈
